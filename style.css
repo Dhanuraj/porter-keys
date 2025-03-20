@@ -322,3 +322,88 @@ body {
     margin: 0.5rem 0;
     color: var(--text);
   }
+  /* style.css - Mobile Additions */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .filters-container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .search-box, 
+  .caller-filter, 
+  .number-filter {
+    width: 100% !important;
+    margin: 4px 0;
+    font-size: 16px; /* Larger touch targets */
+  }
+
+  .result-item {
+    padding: 12px;
+    margin: 6px 0;
+    font-size: 15px;
+  }
+
+  .answer-container {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+  }
+
+  .close-btn {
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+  }
+
+  .notes-section {
+    margin-top: 15px;
+  }
+
+  #noteInput {
+    height: 100px;
+    font-size: 16px;
+  }
+
+  /* Mobile-specific touch interactions */
+  .result-item {
+    padding: 16px;
+    margin: 8px 0;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  /* Prevent zoom on input focus */
+  input, textarea {
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+}
+
+@media (max-width: 480px) {
+  .answer-container {
+    height: 85vh;
+    padding: 20px 15px;
+  }
+  
+  .answer-header {
+    font-size: 1.3rem;
+  }
+  
+  .question-number {
+    font-size: 1.1rem;
+  }
+}
