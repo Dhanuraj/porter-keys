@@ -12,8 +12,7 @@ const answers = {
     12: "Vendor Rejects the Order",
     13: "Supervisor Reject Order - PNM",
     14: "Service Related - Not Enough Packing Materials",
-    15: "Unable to find Customer's Location (Pickup/Drop)
-",
+    15: "Unable to find Customer's Location (Pickup/Drop)",
     16: "Customer/Partner/Supervisor Unreachable",
     17: "Changes in Order Requirement - Changes in Materials/ Extra Items",
     18: "Service Related - Wrong vehicle assigned",
