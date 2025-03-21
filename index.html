@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <a href="https://zingtree.com/show/191491636?tree_id=191491636#1" target="_blank">
+            <img src="icons/zingtree.png" alt="Google"> Zingtree
+        </a>
+        <a href="https://porter.lightning.force.com/lightning/o/House_Shifting_Ticket__c/list?filterName=__Recent" target="_blank">
+            <img src="icons/Salesforce.com_logo.svg.png" alt="Bing"> Salesforce
+        </a>
+        <a href="https://spot.porter.in:8443/app/" target="_blank">
+            <img src="icons/ameyo-1669210243-logo.webp" alt="Zingtree"> Ameyo
+        </a>
+        <a href="https://sites.google.com/theporter.in/house-shifting-knowledge-base/home" target="_blank">
+            <img src="icons/Porter-logo.png" alt="GitHub"> Porter KB
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1LTS9n-WhtAAmOGKauUsn2Wy8l-EFTYy5DWTJpJUMjAw/edit?gid=0#gid=0" target="_blank">
+            <img src="icons/Google_Sheets_logo_(2014-2020).svg.png" alt="Stack Overflow"> Keywords
+        </a>
+    </div>
+    <h1>Question Search</h1>
+    <!-- <h6>Copy the keyword and paste on zingtree </h6> -->
+    <!-- <div> <h6>Copy the keyword and paste on zingtree </h6></div> -->
+    
+    <div class="filters-container">
+        <select id="callerFilter" class="caller-filter">
+            <option value="all">All Callers</option>
+            <option value="customer">Customer</option>
+            <option value="partner">Partner</option>
+            <option value="vendor">Vendor</option>
+        </select>
+        
+        
+        <input type="text" class="search-box" placeholder="Search by keywords...">
+        <input type="text" class="number-filter" id="numberFilter" placeholder="Search by question number...">
+    </div>
+    <div> <h6>Copy the keyword and paste on zingtree </h6></div>
+    
+
+    <div id="results"></div>
+    <div class="answer-container">
+        <button class="close-btn">&times;</button>
+        <div class="answer-header">Question and Keywords</div>
+        <h6>Copy the keyword and paste on zingtree to get things done </h6>
+        <div id="answerContent"></div>
+        
+        <div class="static-text">
+            Call summary & Resolution -<br>
+            Caller agreed -<br>
+            Follow up -<br>
+            Test Ticket
+        </div>
+
+        <div class="static-text">
+           <h3> ***** Remainder *****</h3><br>
+            Copy caller Number  <br>
+            Put break  <br>
+            
+        </div>
+        
+        <div class="notes-section">
+            <textarea id="noteInput" placeholder="Add important notes here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <div id="savedNotes"></div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="answers.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
