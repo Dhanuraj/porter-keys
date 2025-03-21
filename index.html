@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
     <h1>Question Search</h1>
@@ -37,10 +38,17 @@
             Follow up -<br>
             Test Ticket
         </div>
+
+        <div class="static-text">
+           <h3> ***** Remainder *****</h3><br>
+            Copy caller Number  <br>
+            Put break  <br>
+            
+        </div>
         
         <div class="notes-section">
             <textarea id="noteInput" placeholder="Add important notes here..."></textarea>
-            <button onclick="saveNote()">Save Note</button> 
+            <button onclick="saveNote()">Save Note</button>
             <div id="savedNotes"></div>
         </div>
     </div>
